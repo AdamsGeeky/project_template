@@ -8,4 +8,10 @@ This repository contains the Minimum Viable Product (MVP) for the ALX portfolio 
 
 ## Project Description: 
 
-OpSkillPath is a revolutionary open-source online learning platform that empowers learners to embark on a knowledge journey through collaborative and project-based learning. The platform aims to democratise education by providing free and accessible learning resources across diverse subjects, including programming languages, technology stacks, arts, sciences, and more. OpSkillPath fosters a vibrant community of learners and instructors, promoting continuous knowledge sharing and skill development through real-world projects aligned with the United Nations Sustainable Development Goals (SDGs) using the 17 Goals
+**OpSkillPath** presents a groundbreaking open-source online learning platform designed to empower **social developers** and **social entrepreneurs** in constructing impactful tech enterprises with a strong social innovation component.
+
+This platform strives to democratize education by offering accessible learning resources spanning a diverse array of subjects, encompassing programming languages, technology stacks, arts, sciences, and beyond. 
+
+At its core, OpSkillPath cultivates a dynamic community of learners and instructors, fostering collaborative knowledge exchange and skill honing through practical projects directly aligned with the United Nations Sustainable Development Goals (SDGs), spanning the 17 Goals.
+
+This transformative initiative not only champions education but also aims to catalyze the formation of socially conscious tech ventures, thereby contributing to meaningful and sustainable social change.
