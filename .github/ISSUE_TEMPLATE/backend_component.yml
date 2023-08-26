@@ -29,7 +29,3 @@ body:
         - Data is received from clients via API requests.
         - The component processes the data and interacts with the database.
         - Processed data is returned to clients as API responses.
-
-<!--
-Please assign labels and appropriate milestones to this issue.
--->
