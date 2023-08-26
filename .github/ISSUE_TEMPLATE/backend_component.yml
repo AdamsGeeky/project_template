@@ -1,5 +1,5 @@
 name: Backend Component
-description: Manage a backend component for the project.
+description: Manage a backend component for the project
 title: '[Backend Component]'
 labels: ['backend']
 body:
