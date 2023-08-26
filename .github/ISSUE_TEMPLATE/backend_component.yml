@@ -1,18 +1,35 @@
-name: Documentation request
-description: Change regarding improving the docs to be more accessible
-title: '[docs]'
-labels: ['documentation']
+name: Backend Component
+description: Manage a backend component for the project.
+title: '[Backend Component]'
+labels: ['backend']
 body:
   - type: textarea
     attributes:
-      label: Category of documentation update
-      description: |
-        What category does this change fall under.For example Typo error, New category addition, Rephrasing the sentences, fixing broken links etc 
+      label: Component Description
+      description: Describe the purpose and functionality of the backend component.
+      placeholder: Explain what this component is responsible for.
     validations:
       required: true
-  - type: textarea
+  - type: markdown
     attributes:
-      label: Describe the change you think might work
-      description: Please describe the change & need of change in atmost detail possible.
+      label: API Routes
+      description: List the API routes associated with this component.
+      value: |
+        - **GET /api/endpoint:** Get data from the endpoint.
+        - **POST /api/endpoint:** Create new data.
+        - **PUT /api/endpoint/:id:** Update data by ID.
+        - **DELETE /api/endpoint/:id:** Delete data by ID.
     validations:
-      required: false
+      required: true
+  - type: markdown
+    attributes:
+      label: Data Flow
+      description: Explain how data flows through this component.
+      value: |
+        - Data is received from clients via API requests.
+        - The component processes the data and interacts with the database.
+        - Processed data is returned to clients as API responses.
+
+<!--
+Please assign labels and appropriate milestones to this issue.
+-->
