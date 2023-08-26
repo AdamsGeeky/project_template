@@ -6,24 +6,34 @@ body:
   - type: textarea
     attributes:
       label: Component Description
+      description: Describe the purpose and functionality of the backend component.
       placeholder: Explain what this component is responsible for.
+    validations:  
       required: false
   - type: textarea
     attributes:
-      value: |
-        ### API Routes
-        
+     label: API Routes
+     description: Describe api routes together with purpose and functionality
+      value: |       
         - **GET /api/endpoint:** Get data from the endpoint.
         - **POST /api/endpoint:** Create new data.
         - **PUT /api/endpoint/:id:** Update data by ID.
         - **DELETE /api/endpoint/:id:** Delete data by ID
+        - ....
+    validations:
       required: false
   - type: textarea
     attributes:
-      value: |
-        ### Data Flow
-        
+      label: Data Flow
+      description: Describe data flow together with purpose and functionality
+      value: |  
         - Data is received from clients via API requests.
         - The component processes the data and interacts with the database.
         - Processed data is returned to clients as API responses.
+      required: false
+  - type: textarea
+    attributes:
+      label: Additional context
+      description: Add any other context or screenshots about the feature request here.
+    validations:
       required: false
