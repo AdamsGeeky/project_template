@@ -10,7 +10,7 @@ body:
       placeholder: Explain what this component is responsible for
     validations:
       required: false
-  - type: textarea
+  - type: markdown
     attributes:
       label: UI Elements
       description: List the key UI elements and features associated with this component
