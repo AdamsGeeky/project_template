@@ -1,14 +1,14 @@
 name: Backend Component
 description: Manage a backend component for the project
-title: '[Backend Component]'
+title: '[feat]'
 labels: ['backend']
 body:
   - type: textarea
     attributes:
       label: Component Description
       placeholder: Explain what this component is responsible for.
-      required: true
-  - type: markdown
+      required: false
+  - type: textarea
     attributes:
       value: |
         ### API Routes
@@ -17,8 +17,8 @@ body:
         - **POST /api/endpoint:** Create new data.
         - **PUT /api/endpoint/:id:** Update data by ID.
         - **DELETE /api/endpoint/:id:** Delete data by ID
-      required: true
-  - type: markdown
+      required: false
+  - type: textarea
     attributes:
       value: |
         ### Data Flow
@@ -26,4 +26,4 @@ body:
         - Data is received from clients via API requests.
         - The component processes the data and interacts with the database.
         - Processed data is returned to clients as API responses.
-      required: true
+      required: false
