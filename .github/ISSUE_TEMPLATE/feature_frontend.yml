@@ -1,7 +1,7 @@
 name: Frontend Component
 description: Manage a frontend component for the project
 title: '[feat]'
-labels: ['enhancement']
+labels: ['frontend']
 body:
   - type: textarea
     attributes:
