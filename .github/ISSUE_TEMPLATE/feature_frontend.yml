@@ -2,6 +2,8 @@ name: Frontend Component
 description: Manage a frontend component for the project
 title: '[feat]'
 labels: ['frontend']
+assignees:
+  - AdamsGeeky
 body:
   - type: textarea
     attributes:
