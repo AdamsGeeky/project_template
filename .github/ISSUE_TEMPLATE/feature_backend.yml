@@ -2,6 +2,8 @@ name: Backend Component
 description: Manage a backend component for the project
 title: '[feat]'
 labels: ['backend']
+assignees:
+  - AdamsGeeky
 body:
   - type: textarea
     attributes:
