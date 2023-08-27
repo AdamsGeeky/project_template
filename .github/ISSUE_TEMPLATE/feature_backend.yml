@@ -14,7 +14,7 @@ body:
     attributes:
      label: API Routes
      description: Describe api routes together with purpose and functionality
-      value: |       
+     value: |       
         - GET /api/endpoint: Get data from the endpoint.
         - POST /api/endpoint: Create new data.
         - PUT /api/endpoint/:id: Update data by ID.
