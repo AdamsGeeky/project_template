@@ -15,10 +15,10 @@ body:
      label: API Routes
      description: Describe api routes together with purpose and functionality
       value: |       
-        - **GET /api/endpoint:** Get data from the endpoint.
-        - **POST /api/endpoint:** Create new data.
-        - **PUT /api/endpoint/:id:** Update data by ID.
-        - **DELETE /api/endpoint/:id:** Delete data by ID
+        - GET /api/endpoint: Get data from the endpoint.
+        - POST /api/endpoint: Create new data.
+        - PUT /api/endpoint/:id: Update data by ID.
+        - DELETE /api/endpoint/:id: Delete data by ID
         - ....
     validations:
       required: false
