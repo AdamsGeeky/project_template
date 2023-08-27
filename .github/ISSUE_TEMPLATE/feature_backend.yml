@@ -19,7 +19,6 @@ body:
         - POST /api/endpoint: Create new data.
         - PUT /api/endpoint/:id: Update data by ID.
         - DELETE /api/endpoint/:id: Delete data by ID
-        - ....
     validations:
       required: false
   - type: textarea
