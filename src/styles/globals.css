@@ -3,25 +3,158 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  /* # identifier   /**=========== Colors use modifiy opacity  =========== */
+  --content: 173, 219, 154; /* Light Green */
+  --divider: 41, 81, 51; /* Dark Green */
+  --base-100: 20, 20, 20; /* black */
+  --base-200: 0, 56, 24; /* Dark Green */
+  --base-gray: 80, 80, 80; /* Gray */
+  --primary: 78, 166, 68; /* Green */
+  --primary-hover: 54, 128, 45; /* Dark Green */
+  --primary-disable: 114, 191, 100; /* Light Green */
+  --white: 256, 256, 256; /* White */
+  /* #ending  /**======== Colors use modifiy opacity  =========== */
+
+  /* # variable  /**=========== Colors with opacity 100 =========== */
+  --clr-content: rgb(var(--content));
+  --clr-divider: rgb(var(--divider));
+  --clr-base-100: rgb(var(--base-100));
+  --clr-base-200: rgb(var(--base-200));
+  --clr-base-gray: rgb(var(--base-gray));
+  --clr-primary: rgb(var(--primary));
+  --clr-primary-hover: rgb(var(--primary-hover));
+  --clr-primary-disable: rgb(var(--primary-disable));
+  /* #ending  /**======== Colors with opacity 100 =========== */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+html {
+  scroll-behavior: smooth;
+}
+
+::-moz-selection {
+  color: rgb(var(--primary));
+  background: rgb(var(--content));
+}
+
+::selection {
+  color: rgb(var(--primary));
+  background: rgb(var(--content));
+}
+
+@layer base {
+  body {
+    background: #141414;
+    @apply scroll-pt-16 scroll-smooth md:scroll-pt-28;
+  }
+  /* #region  /**=========== Typography =========== */
+
+  .h0 {
+    @apply font-sans text-3xl font-semibold text-content md:text-5xl;
+  }
+
+  h1,
+  .h1 {
+    @apply font-sans text-3xl font-semibold leading-relaxed text-content md:text-4xl lg:text-5xl;
+  }
+
+  h2,
+  .h2 {
+    @apply font-sans text-xl font-semibold text-content md:text-3xl;
+  }
+
+  h3,
+  .h3 {
+    @apply font-sans text-lg font-semibold text-content md:text-xl;
+  }
+
+  h4,
+  .h4 {
+    @apply font-sans text-base font-semibold text-content md:text-lg;
+  }
+
+  body,
+  .p {
+    @apply font-sans text-sm font-medium text-content md:text-base;
+  }
+
+  .heading {
+    @apply text-center font-sans text-4xl font-black leading-relaxed text-content md:text-5xl lg:text-8xl;
+  }
+
+  .heading.heading-md {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  /* #endregion  /**======== Typography =========== */
+
+  img {
+    min-width: 0; /* prevent flex items from overflowing horizontally */
+    min-height: 0; /* prevent flex items from overflowing vertically */
+  }
+
+  .layout {
+    /* 1280px */
+    max-width: 80rem;
+    @apply mx-auto w-11/12;
+  }
+
+  /* Class to adjust with sticky footer */
+  .min-h-main {
+    @apply min-h-[calc(100vh-56px)];
+  }
+  body::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+    background-color: var(--clr-base-100);
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: #ffffff50;
+  }
+}
+@layer utilities {
+  /* Class to highlight the text */
+  .highlight {
+    @apply text-primary;
+  }
+  /* Darker highlight can be used on light background */
+  .highlight.highlight--dark {
+    @apply text-primary-hover;
+  }
+  /* Light highlight can be used on Dark background */
+  .highlight.highlight--light {
+    @apply text-primary-disable;
+  }
+  .highlight.highlight--white {
+    @apply text-white;
+  }
+  .highlight.highlight--yellow {
+    @apply text-yellow-400;
+  }
+  .highlight.highlight--gradient {
+    @apply bg-gradient-to-br from-pink-500 to-blue-500 bg-clip-text font-semibold text-transparent;
+  }
+  .styled-hr {
+    @apply h-2 w-32 rounded-full border-none bg-primary;
+  }
+  .styled-hr.styled-hr--light {
+    @apply h-1 bg-content/30;
+  }
+  .styled-hr.styled-hr--dark {
+    @apply h-1 bg-base-100/50;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.main section:nth-child(odd) {
+  background: var(--clr-base-100);
+}
+.main section:nth-child(even) {
+  background-image: linear-gradient(
+    to bottom right,
+    var(--clr-base-100),
+    hsla(240, 89%, 51%, 0.424)
+  );
+}
+.main section:first-child {
+  background: transparent;
 }
